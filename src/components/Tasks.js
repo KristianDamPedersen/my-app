@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types'
 
-const Tasks = () => {
+const Tasks = (props) => {
+
     return (
-        <div>
-            <h1>This is the task stuff</h1>
-        </div>
+        <>
+            {props.tasks.map((tasks) => (<h3 key={tasks.id}>{tasks.text}</h3>))}
+        </>
     )
 }
 
@@ -18,6 +19,7 @@ Tasks.defaultProps = {
 Tasks.propTypes = {
 
 }
+
 
 
 export default Tasks
