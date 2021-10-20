@@ -1,23 +1,14 @@
-import PropTypes from 'prop-types'
+// importing
+import TaskComponent from './TaskComponent'
 
+// Coding
 const Tasks = (props) => {
 
     return (
         <>
-            {props.tasks.map((tasks) => (<h3 key={tasks.id}>{tasks.text}</h3>))}
+            {props.tasks.map((tasks) => (<TaskComponent key={tasks.id} task={tasks} />))}
         </>
     )
-}
-
-
-// Define defaultProps
-Tasks.defaultProps = {
-
-}
-
-// Define propTypes
-Tasks.propTypes = {
-
 }
 
 
