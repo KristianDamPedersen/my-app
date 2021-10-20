@@ -38,7 +38,11 @@ const deleteTask = (id) => {
     return (
     <div className="container">
       <Header />
-      <Tasks tasks={tasks} onDelete={deleteTask} />
+      {/* Render the task element, or show message if tasks are empty*/}
+      {tasks.length > 0
+        ? <Tasks tasks={tasks} onDelete={deleteTask} />
+        : 'You´re all done! Have a nice day :)'
+      }
     </div>
   );
 }
