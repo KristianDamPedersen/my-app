@@ -1,3 +1,6 @@
+// import the x - icon
+import { FaAppStoreya } from 'react-icons/fa'
+
 const TaskComponent = (props) => {
     return (
         <div className='task'>
