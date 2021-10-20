@@ -5,8 +5,7 @@ import Header from './components/Header'
 
 // app
 function App() {
-  const name = 'Kedde'
-  return (
+    return (
     <div className="container">
       <Header />
     </div>
