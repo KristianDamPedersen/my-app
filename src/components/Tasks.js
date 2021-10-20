@@ -2,11 +2,11 @@
 import TaskComponent from './TaskComponent'
 
 // Coding
-const Tasks = (props) => {
+const Tasks = ({tasks, onDelete}) => {
 
     return (
         <>
-            {props.tasks.map((tasks) => (<TaskComponent key={tasks.id} task={tasks} />))}
+            {tasks.map((tasks) => (<TaskComponent key={tasks.id} task={tasks} onDelete={onDelete} />))}
         </>
     )
 }

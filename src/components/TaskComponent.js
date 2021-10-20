@@ -1,14 +1,14 @@
 // import the x - icon
 import { FaTimes } from 'react-icons/fa'
 
-const TaskComponent = (props) => {
+const TaskComponent = ({ task, onDelete}) => {
     return (
         <div className='task'>
             <h3>
-                {props.task.text} <FaTimes style={{ color: 'red', cursor: 'pointer'}}/>
+                {task.text} <FaTimes style={{ color: 'red', cursor: 'pointer'}} onClick={onDelete}/>
             </h3>
             <p>
-                {props.task.day}
+                {task.day}
             </p>
             
         </div>
