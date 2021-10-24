@@ -46,6 +46,7 @@ const toggleReminder = (id) => {
     return (
     <div className="container">
       <Header />
+      <AddTask />
       {/* Render the task element, or show message if tasks are empty*/}
       {tasks.length > 0
         ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />

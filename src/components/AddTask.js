@@ -13,12 +13,12 @@ const AddTask = () => {
                 <input type='text' placeholder='Add day & time' />
 
             </div>
-            <div className='form-control'>
+            <div className='form-control form-control-check'>
                 <label>Set reminder?</label>
-                <input type='text' placeholder='Add task' />
+                <input type='checkbox' placeholder='Add task' />
 
             </div>
-            <input type='submit' value='Save task' />
+            <input className='btn btn-block' type='submit' value='Save task' />
         </form>
     )
 }
